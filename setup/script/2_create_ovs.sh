@@ -25,9 +25,10 @@ sudo ovs-vsctl add-br br2
 
 # set controller
 
-sudo ovs-vsctl set-controller br0 $1
-sudo ovs-vsctl set-controller br1 $1
-sudo ovs-vsctl set-controller br2 $1
+CONTROLLERS=$(echo $1 | sed 's/,/ /g')
+sudo ovs-vsctl set-controller br0 $CONTROLLERS
+sudo ovs-vsctl set-controller br1 $CONTROLLERS
+sudo ovs-vsctl set-controller br2 $CONTROLLERS
 
 # set operation mode
 
