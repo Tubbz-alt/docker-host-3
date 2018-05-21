@@ -8,7 +8,7 @@ $DOCKER_HOME/docker-clean.sh
 
 # create new containers
 
-NUM_OF_DOCKERS=64
+NUM_OF_DOCKERS=63
 
 $DOCKER_HOME/script/1_run_docker.sh $NUM_OF_DOCKERS
 
@@ -40,7 +40,7 @@ $DOCKER_HOME/script/2_create_ovs.sh $CONTROLLERS $PROTOCOL $CTRL $BR0_IP $BR1_IP
 
 # NETWORK(X.X.X).DOCKER(1 ~ $NUM_OF_DOCKERS)
 NETWORK=172.16.5
-START_IP=1
+START_IP=2
 MID_IP=32
 END_IP=64
 CIDR=24

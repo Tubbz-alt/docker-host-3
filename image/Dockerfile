@@ -1,5 +1,5 @@
-FROM ubuntu:14.04
-MAINTAINER Jaehyun Nam <namjh@kaist.ac.kr>
+FROM ubuntu:16.04
 
 RUN apt-get update
-RUN apt-get install -y d-itg iperf vim
+RUN apt-get install -y d-itg
+RUN apt-get install -y iperf
