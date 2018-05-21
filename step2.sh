@@ -18,6 +18,7 @@ echo
 echo "Some jobs that you need to do by yourself"
 echo
 echo "1. Modify ~/docker-setup.sh"
+echo
 echo "2. Modify /etc/network/interfaces"
 echo "   auto [Interface for the control plane]"
 echo "   iface [Interface] inet static"
@@ -28,6 +29,3 @@ echo "       broadcast [Broadcast IP]"
 echo
 echo "   auto [Interface for the data plane]"
 echo "   iface [Interface] inet manual"
-echo
-echo "   ..."
-echo

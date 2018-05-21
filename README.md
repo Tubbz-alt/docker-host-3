@@ -1,4 +1,4 @@
-# docker-host-3
+# Docker-Host-3
 Docker-based host environment with three OVS switches
 
 # Instruction
