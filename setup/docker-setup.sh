@@ -8,7 +8,7 @@ $DOCKER_HOME/docker-clean.sh
 
 # create new containers
 
-NUM_OF_DOCKERS=63
+NUM_OF_DOCKERS=64
 
 $DOCKER_HOME/script/1_run_docker.sh $NUM_OF_DOCKERS
 

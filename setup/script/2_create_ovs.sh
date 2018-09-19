@@ -42,6 +42,10 @@ sudo ovs-vsctl -- set bridge br0 protocols=$2
 sudo ovs-vsctl -- set bridge br1 protocols=$2
 sudo ovs-vsctl -- set bridge br2 protocols=$2
 
+#sudo ovs-vsctl -- set bridge br0 other-config:datapath-id=0000000000000001
+#sudo ovs-vsctl -- set bridge br1 other-config:datapath-id=0000000000000002
+#sudo ovs-vsctl -- set bridge br2 other-config:datapath-id=0000000000000003
+
 # add NICs
 
 sudo ifconfig $3:0 $4 up
