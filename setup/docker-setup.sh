@@ -8,7 +8,7 @@ $DOCKER_HOME/docker-clean.sh
 
 # create new containers
 
-NUM_OF_DOCKERS=64
+NUM_OF_DOCKERS=63
 
 $DOCKER_HOME/script/1_run_docker.sh $NUM_OF_DOCKERS
 
@@ -30,9 +30,9 @@ BR2_IP=192.168.0.13
 
 # Nothing / Target NICs
 NIC1=eth1
-NIC2=eth2
-NIC3=eth3
-NIC4=eth4
+NIC2=
+NIC3=
+NIC4=
 
 $DOCKER_HOME/script/2_create_ovs.sh $CONTROLLERS $PROTOCOL $CTRL $BR0_IP $BR1_IP $BR2_IP $NIC1 $NIC2 $NIC3 $NIC4
 
