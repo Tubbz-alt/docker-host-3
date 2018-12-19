@@ -8,7 +8,7 @@ $DOCKER_HOME/docker-clean.sh
 
 # create new containers
 
-NUM_OF_DOCKERS=63
+NUM_OF_DOCKERS=10
 
 $DOCKER_HOME/script/1_run_docker.sh $NUM_OF_DOCKERS
 
@@ -21,15 +21,15 @@ CONTROLLERS="tcp:192.168.0.11:6633,tcp:192.168.0.12:6633,tcp:192.168.0.13:6633"
 PROTOCOL=OpenFlow10
 
 # Interface connected to the control plane
-CTRL=eth0
+CTRL=eth1
 
 # Each OVS IP address
-BR0_IP=192.168.0.11
-BR1_IP=192.168.0.12
-BR2_IP=192.168.0.13
+BR0_IP=192.168.0.101
+BR1_IP=192.168.0.102
+BR2_IP=192.168.0.103
 
 # Nothing / Target NICs
-NIC1=eth1
+NIC1=eth2
 NIC2=
 NIC3=
 NIC4=
@@ -40,9 +40,9 @@ $DOCKER_HOME/script/2_create_ovs.sh $CONTROLLERS $PROTOCOL $CTRL $BR0_IP $BR1_IP
 
 # NETWORK(X.X.X).DOCKER($START_IP ~ $END_IP)
 NETWORK=172.16.0
-START_IP=2
-MID_IP=32
-END_IP=64
+START_IP=21
+MID_IP=25
+END_IP=30
 CIDR=24
 GATEWAY=172.16.0.1
 
