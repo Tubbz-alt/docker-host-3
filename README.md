@@ -6,7 +6,7 @@ Docker-based host environment with three OVS switches
 
 	./step1.sh  
 
-2. Modify /etc/network/interface to configure interfaces for the control and data plane
+2. Modify /etc/network/interface to configure interfaces for the control and data planes
 
 3. Run step2.sh to create a host image and copy scripts to HOME
 
