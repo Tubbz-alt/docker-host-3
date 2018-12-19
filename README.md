@@ -5,7 +5,6 @@ Docker-based host environment with three OVS switches
 1. Run step1.sh to install Docker and Open vSwitch
 
 	./step1.sh  
-	(After this step, you need to log out and log back in)
 
 2. Modify /etc/network/interface to set up the interfaces for the control and data plane
 

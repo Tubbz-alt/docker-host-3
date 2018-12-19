@@ -19,3 +19,6 @@ echo "       broadcast [Broadcast IP]"
 echo
 echo "   auto [Interface for the data plane]"
 echo "   iface [Interface] inet manual"
+echo
+echo "Then, please reboot the machine"
+echo
