@@ -9,7 +9,7 @@
 # $7 = NIC1
 # $8 = NIC2
 # $9 = NIC3
-# $10 = NIC4
+# ${10} = NIC4
 
 # delete bridge
 
@@ -65,8 +65,8 @@ fi
 if [ ! -z $9 ]; then
 sudo ovs-vsctl add-port br0 $9
 fi
-if [ ! -z $10 ]; then
-sudo ovs-vsctl add-port br0 $10
+if [ ! -z ${10} ]; then
+sudo ovs-vsctl add-port br0 ${10}
 fi
 
 echo $(ip route get 8.8.8.8 | awk 'NR==1 {print $NF}')": Created Open vSwitch"
