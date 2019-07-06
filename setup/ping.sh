@@ -1,8 +1,8 @@
 #!/bin/bash
 
 NETWORK=172.16.0
-START_IP=21
-END_IP=30
+START_IP=97
+END_IP=128
 
 CNT=0
 for i in $(seq $START_IP $END_IP)
